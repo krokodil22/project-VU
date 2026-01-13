@@ -1,0 +1,21 @@
+<body style="background:#0b1026;text-align:center">
+  <h1 style="padding:14px;background:#111a3d;color:#ffd36e">
+    🚀 Случайный факт о космосе!
+  </h1>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaNw-xD7zQgi5B5I2M-HsBrS49gj9bEDDYOA&s">	
+  <p id="box" style="color:white;background:#0f1633; padding:10px">
+    Нажми кнопку — появится космо-факт!
+  </p>
+
+  <a href="#" onclick="show();return false"
+     style="background:#ffd36e;color:#0b1026; padding: 5px;">
+    Показать факт
+  </a>
+
+  <script>
+    const f=["Венера: день длиннее года","Юпитер — самый большой","На Луне почти нет воздуха","Свет летит 8 минут"];
+    function show(){
+      box.innerHTML="<b>"+f[(Math.random()*f.length)|0]+"</b>";
+    }
+  </script>
+</body>
